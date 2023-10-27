@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content:flex-start; /* Align items to the left */
+            background-color: #000; /* Set the background color to black */
+        }
+
+        video {
+            position: relative; /* Change from absolute to relative */
+            left: 20%; /* Adjust this value to move the video more or less from the left */
+            width: 80%; /* Adjust this value so that video doesn't go off screen */
+        }
+    </style>
+</head>
+
+<body>
+    <video autoplay loop muted playsinline>
+        <source src="test.webm" type="video/webm">
+    </video> 
+</body>
+</html>
